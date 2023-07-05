@@ -1,20 +1,18 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      Blank
+    <ion-title color="warning">
+      Ionic Gestures Apli Movil
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
+<ion-content class="ion-padding-top">
   <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+    <div #box
+      [ngStyle]="{'width': '100px', 'height': '100px', 'background': 'var(--ion-color-danger'}">
+    </div>
+    <div #boxDos
+      [ngStyle]="{'width': '100px', 'height': '100px', 'background': 'var(--ion-color-secondary'}">
+    </div>
   </div>
 </ion-content>
